@@ -7,6 +7,8 @@
   <meta name="description" content="Web Developer">
   <title>Daniel Simonis | CV</title>
 
+  <!-- animation with greensock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -34,8 +36,8 @@
 				<div>
 					<div class="row align-items-center">
 						<div class="col-12 col-md-6 col-lg-8 col-xl-9">
-							<h2 class="cv-name mb-0 text-uppercase">Daniel Simonis</h2>
-							<div class="cv-tagline mb-3 mb-md-0">Web Developer</div>
+							<h2 id="heading_name" class="cv-name mb-0 text-uppercase">Daniel Simonis</h2>
+							<div id="heading_skill" class="cv-tagline mb-3 mb-md-0">Web Developer</div>
 						</div>
 						<div class="cv-contact col-12 col-md-6 col-lg-4 col-xl-3">
 							<ul class="list-unstyled mb-0">
@@ -63,7 +65,7 @@
 								<h3 class="text-uppercase cv-section-heading mb-4">Software Development</h3>
 								<div class="item mb-3">
 									<div class="item-heading row align-items-center mb-1">
-										<h4 class="item-title col-12 col-md-6 col-lg-7 mb-2 mb-md-0"><a href="http://www.wackit.in" target="_blank" class="theme-link">Wack</a></h4>
+										<h4 id="heading_wack" class="item-title col-12 col-md-6 col-lg-7 mb-2 mb-md-0"><a href="http://www.wackit.in" target="_blank" class="theme-link">Wack</a></h4>
 										<div class="item-meta col-12 col-md-6 col-lg-5 text-muted text-left text-md-right"></div>
 									</div>
 									<div class="item-content">
@@ -259,3 +261,9 @@
 		</div>
 </body>
 </html>
+
+<script>
+  gsap.from("#heading_name", {scale: 0.2});
+  gsap.from("#heading_skill", {x:150, scale:0.2, delay:0.4});
+  gsap.to("#heading_wack", {y:-10, repeat:5, yoyo:true, delay:1.5, duration:0.2});
+</script>
