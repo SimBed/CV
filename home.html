@@ -53,7 +53,7 @@
 
 				<div class="cv-intro py-2">
 						<div class="text-left">
-							<p class="mb-0">Meticulous and motivated; long-term involvement with technology and finance; 2 years independent development with Ruby on Rails; business website and Rails fitness app.</p>
+							<p class="mb-0">Meticulous and motivated; 2 years independent development with Ruby on Rails; Rails fitness app & climbing app.</p>
 						</div>
 				</div>
 				<hr class="divider">
@@ -63,7 +63,19 @@
 
 							<section class="py-3">
 								<h3 class="text-uppercase cv-section-heading mb-4">Software Development</h3>
-								<div class="item mb-3">
+                <div class="item mb-3">
+									<div class="item-heading row align-items-center mb-1">
+										<h4 id="heading_whack" class="item-title col-12 col-md-6 col-lg-7 mb-2 mb-md-0"><a href="https://woodytrack.herokuapp.com/" target="_blank" class="theme-link">Whack</a></h4>
+										<div class="item-meta col-12 col-md-6 col-lg-5 text-muted text-left text-md-right"></div>
+									</div>
+									<div class="item-content">
+										<p class="mb-0">Ruby on Rails climbing app for tracking progress on climbing routes</p>
+										<ul class="item-meta text-muted">
+											<li>Rails, Ruby, PostgreSQL, AJAX, Git, Heroku, Minitest</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item">
 									<div class="item-heading row align-items-center mb-1">
 										<h4 id="heading_wack" class="item-title col-12 col-md-6 col-lg-7 mb-2 mb-md-0"><a href="http://www.wackit.in" target="_blank" class="theme-link">Wack</a></h4>
 										<div class="item-meta col-12 col-md-6 col-lg-5 text-muted text-left text-md-right"></div>
@@ -100,49 +112,6 @@
                   </div>
                 </div>
 
-							</section>
-
-							<section class="py-3">
-								<h3 class="text-uppercase cv-section-heading mb-4">Software Training</h3>
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"><a href="https://www.learnenough.com/ruby-on-rails-6th-edition" target="_blank" class="theme-link">The Ruby on Rails Tutorial, Michel Hartl</a></h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"></div>
-									</div>
-									<div class="item-content">
-										<!--p class="mb-0">By building a professional grade ‘twitter-like’ web-app, thorough introduction to:</p-->
-										<ul class="item-meta text-muted">
-											<li>generators, migrations and SQL, routing, controllers, views, embedded Ruby</li>
-											<li>test driven development and integration tests</li>
-											<li>MVC and REST architecture</li>
-											<li>GIT version control, Github, Heroku deployment</li>
-										</ul>
-									</div>
-								</div>
-								<div class="item">
-									<div class="item-heading row align-items-center">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"><a href="https://learnrubythehardway.org/book/" target="_blank" class="theme-link">Learn Ruby The Hard Way, Zed Shaw</a></h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"></div>
-										</div>
-									<div class="item-content">
-										<ul class="item-meta text-muted">
-											<li>Data Structures, Control Flow, Input, Files, Methods</li>
-											<li>Testing, Debugging, Exception Handling</li>
-											<li>OOP - Classes and Objects, Modules, Gems</li>
-										</ul>
-									</div>
-								</div>
-                <div class="item">
-									<div class="item-heading row align-items-center">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"><a href="https://www.postgresqltutorial.com/" target="_blank" class="theme-link">PostgreSQL Tutorial</a></h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"></div>
-										</div>
-									<div class="item-content">
-										<ul class="item-meta text-muted">
-											<li>Query, Filter, Join, Modify, Manage</li>
-										</ul>
-									</div>
-								</div>
 							</section>
 
 							<section class="pt-3">
@@ -203,8 +172,6 @@
 										<li class="mb-2">EXCEL & VBA</li>
 										<li class="mb-2">Git</li>
                     <li class="mb-2">Heroku</li>
-                    <li class="mb-2">APIs</li>
-                    <li class="mb-2">Curl & Postman</li>
 									</ul>
 								</div>
 							</section>
@@ -240,9 +207,7 @@
 								<ul class="list-unstyled cv-interests-list mb-0">
 									<li class="mb-2">Climbing</li>
                   <li class="mb-2">Bridge</li>
-									<li class="mb-2">Chess</li>
-									<li class="mb-2">Callisthenics</li>
-									<li>Hindi</li>
+									<li>Chess</li>
 								</ul>
 							</section>
 						</aside>
@@ -265,5 +230,5 @@
 <script>
   gsap.from("#heading_name", {scale: 0.2});
   gsap.from("#heading_skill", {x:150, scale:0.2, delay:0.4});
-  gsap.to("#heading_wack", {y:-10, repeat:5, yoyo:true, delay:1.5, duration:0.2});
+  gsap.to("#heading_whack", {y:-10, repeat:5, yoyo:true, delay:1.5, duration:0.2});
 </script>
