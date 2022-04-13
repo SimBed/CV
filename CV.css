@@ -154,3 +154,12 @@ a.cv-link:hover {
 .item-heading {
 	margin-bottom:  .25rem;
 }
+
+.software_development_subheader {
+	font-size: 0.875rem;
+}
+
+.software_item_header {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
