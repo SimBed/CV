@@ -152,7 +152,7 @@ a.cv-link:hover {
 }
 
 .item-heading {
-	margin-bottom:  .25rem;
+	margin-bottom: .25rem;
 }
 
 .software_development_subheader {
@@ -162,4 +162,12 @@ a.cv-link:hover {
 .software_item_header {
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+ul.web-apps {
+  list-style-type: none;
+}
+
+ul.web-apps ul {
+  list-style-type: disc;
 }
