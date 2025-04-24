@@ -63,6 +63,7 @@ a.theme-link:hover {
 
 a.cv-link {
   color: #4f4f4f;
+  cursor: pointer;
 }
 
 a.cv-link:hover {
